@@ -16,6 +16,8 @@ elseif(APPLE)
 	set(mhash_config_source include/mutils/mhash_config.osx.h)
 elseif(UNIX)
 	set(mhash_config_source include/mutils/mhash_config.linux.h)
+else()
+	message(FATAL_ERROR detect system failed.)
 endif()
 
 configure_file(${mhash_config_source} mutils/mhash_config.h COPYONLY)

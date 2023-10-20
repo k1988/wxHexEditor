@@ -23,6 +23,7 @@
 *************************************************************************/
 
 #include "windrv.h"
+#include <cstdint>
 
 using namespace std;
 
